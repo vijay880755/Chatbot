@@ -1,0 +1,32 @@
+<div class="chat_window">
+    <div class="top_menu">
+    <div class="buttons">
+    <div class="button close"></div>
+    <div class="button minimize"></div>
+    <div class="button maximize"></div>
+    </div><div class="title">Jenkins Chatbot</div>
+    </div>
+<div class="chatform">
+	<div class="chatlist" #chatlist>
+		<ul class="list-group">
+			<li class="list-group-item" *ngFor="let msg of messages">
+				<img [src]="msg.image" class="avatar">
+				<div class="message">
+				{{ msg.content }}
+				</div>
+				<div class="timeform">
+					<i class="fa fa-clock-o" aria-hidden="true"></i> <span class="timestamp">{{ msg.timestamp | date : 'mediumTime'}}</span>
+        </div>
+			</li>
+		</ul>
+	</div>
+	<form  (submit)="sendMessage(message_content)" class="chatcontrol">
+	  	<div class="input-group mb-3">
+		  <input type="text" class="form-control chatinput" placeholder="Type your Query Here.. I May help you" name="content" aria-label="Enter your Message" aria-describedby="Enter your Message" autocomplete="off" #message_content/>
+		  <div class="input-group-append">
+		    <button class="btn btn-dark sendbtn rounded-0" type="button" (click)="sendMessage(message_content)">	<i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+		  </div>
+		</div>
+	</form>
+</div>	
+</div>

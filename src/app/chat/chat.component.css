@@ -1,0 +1,106 @@
+.chatform{
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.chatcontrol{
+  float: right;
+  width: 100%;
+
+  .chatinput{
+    width: 80%;
+    float: left;
+    border-radius: 0;
+    position: relative;
+    list-style: none;
+    padding: 20px 10px 0 10px;
+    margin: 0;
+    height: 347px;
+    overflow: scroll;
+  }
+
+  .sendbtn{
+    width: 20%;
+    float: left;
+    border-radius: 0;
+    text-transform: uppercase;
+  }
+}
+
+.message {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.timeform {
+  float: left;
+  width: 100%;
+
+  i {
+    margin-left: 20px;
+  }
+
+  .timestamp{
+    font-size: 0.6em;
+  }
+}
+
+.avatar{
+  width: 50px;
+  margin-right: 20px;
+}
+
+.chatlist{
+  height: 55vh;
+  overflow-y: auto;
+}
+.chat_window {
+    position: absolute;
+    width: calc(100% - 20px);
+    max-width: 860px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background-color: #f8f8f8;
+    overflow: hidden;
+  }
+  
+  .top_menu {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0 15px;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+  }
+  .top_menu .buttons {
+    margin: 3px 0 0 20px;
+    position: absolute;
+  }
+  .top_menu .buttons .button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+  }
+  .top_menu .buttons .button.close {
+    background-color: #f5886e;
+  }
+  .top_menu .buttons .button.minimize {
+    background-color: #fdbf68;
+  }
+  .top_menu .buttons .button.maximize {
+    background-color: #a3d063;
+  }
+  .top_menu .title {
+    text-align: center;
+    color: #bcbdc0;
+    font-size: 20px;
+  }
+  
